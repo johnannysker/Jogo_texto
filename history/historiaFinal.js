@@ -28,12 +28,12 @@ module.exports = (heroi) => {
             ‘Portão da saída dos fundos’, você pega as chaves e nota que no 
             canto superior do teto tem uma câmera, seguindo seus movimentos, 
             após isso escuta uma voz no walk talk:
-            - “Doutor Caio. Câmbio”.
+            - “Doutor ${heroi.nome}. Câmbio”.
             Você pega rapidamente o rádio e responde:
-            - “Aqui é o doutor Caio, houve uma pane nos sistemas os animais 
+            - “Aqui é o doutor ${heroi.nome}, houve uma pane nos sistemas os animais 
             estão soutos, solicito um resgate imediatamente! Câmbio.”
-            - “Já estamos indo. Eu quero os dados da pesquisa ou morra. Câmbio”
-            - “Eu não tenho os dados. Câmbio.”
+            - “Já estamos indo. Eu quero os dados da pesquisa ou morre. Câmbio”
+            - “Eu não tenho os dados. Não sei do que está faalando. Câmbio.”
             - “Veremos. Câmbio final”
             Saindo da torre você percebe que na parte de baixo do isqueiro 
             tem um pequeno cartão SD.
@@ -97,10 +97,14 @@ module.exports = (heroi) => {
                  }
                  heroi.verStatus();
                 }else{
-                console.log(`Não conseguindo pensar em nada, desiste e vai embora,
-                deixando a macaca olhando para o buraco agitada e dando pequenos 
-                gritos. ${heroi.nome} Segue em direção da porta de saída, na 
-                esperança de encontrar alguém que possa ajuda-lo a sair.`)
+                console.log(`Chegando a uma porta de aço com parafusos grossos, 
+                    sem nenhuma ferramenta que pudesse usar, tenta voltar para 
+                    a jaula do rinoceronte, para ver se encotra algo para abrir
+                    a porta, mas se depara com alguns leões, tenta correr para 
+                    o heliponto, mas é alcansado por uma leoa e atacado no pescoço`);
+                    heroi.ferimento(100);
+                    vivo = false
+                    heroi.verStatus()
                 }
                 
             break;
