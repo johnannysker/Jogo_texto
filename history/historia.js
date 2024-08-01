@@ -14,10 +14,12 @@ module.exports = (heroi) => {
 
     console.log(`
             ${heroi.nome} está finalizando seu trabalho, observando na jaula 
-        do Rinoceronte uma fêmea estranhamente agitada. De repente, os 
-        alto-falantes se apagam e um rugido ensurdecedor ecoa pelo zoológico. 
-        As portas das jaulas se abrem com um estrondo, liberando uma horda de animais 
-        selvagens.
+        do Rinoceronte uma fêmea estranhamente agitada. Alguns funcionarios
+        comentam que muitas pessoas das cidades vizinhas estão indo embora, 
+        pois os ataques de animais selvagens tem aumentado bastante.
+        De repente, os alto-falantes se apagam e um rugido ensurdecedor ecoa 
+        pelo zoológico. As portas das jaulas se abrem com um estrondo, 
+        liberando uma horda de animais selvagens.
         
             As poucas pessoas que visitavam o zoológico, saem em pânico, as luzes de
         emergência são ligadas, mas não ficarão acessas por muito tempo, em oito horas 
