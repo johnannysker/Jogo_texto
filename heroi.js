@@ -52,9 +52,9 @@ class Heroi extends Personagem{
         const indice = this.Ferramentas.indexOf(itemParaRemover);
         if (indice !== -1) {
             this.Ferramentas.splice(indice, 1);
-            console.log(`Item "${itemParaRemover}" removido do array.`);
+            
         } else {
-            console.log(`Item "${itemParaRemover}" não encontrado no array.`);
+            
         }
     }
 
