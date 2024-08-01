@@ -31,7 +31,7 @@ if (desafio1) {
                 if (desafio5) {
                     const desafioFinal = historiaFinal(heroi);
                     if (desafioFinal) {
-                        console.log("PARABÉNS VOCE FINALIZOU O JOGO!")
+                        console.log(               `PARABÉNS VOCE FINALIZOU O JOGO!`)
                     }
                 }
             }
