@@ -15,11 +15,11 @@ module.exports = (heroi) => {
         Saindo do lago vagarosamente, sentido dores no joelho, ${heroi.nome}
         procura sua lanterna, após procurar por alguns minutos, decide seguir
         sem alanter, pois a luminosidade da lua fornece alguma visibilidade. 
-        Olhando ao seu redor para se localizar, avista entre as arvores o que 
-        parece ser uma casa de madeira, olando para o lado, você nota que está 
-        mais perto da torre de observação, mas, ainda teria que subir o barranco. 
-        O barranco e íngrime demais, você terá que tentar dar a volta e 
-        se arriscar a encontrar as hienas.
+        Olhando ao seu redor para se localizar, observando os raios da lua 
+        atravessar os galhos das arvores, nota que tem uma casa a uns duzentos 
+        metros floresta a dentro, parece ser uma casa de madeira, olhando para
+        o lado, você nota que está mais perto da torre de observação, mas, 
+        ainda teria que subir o barranco. 
         `);
         console.log("");
     console.log("O QUE FAZER AGORA ?");
@@ -39,14 +39,13 @@ module.exports = (heroi) => {
                 encontra sua lanterna, o que ajuda a verificar o barranco, 
                 procurando um lado que seja possível escalar, passa bem perto da torre 
                 de observação, mas ainda dentro do barranco, nota que tem uma luz no 
-                interio da torre, que ocila, decide gritar por socorro, na 
-                esperança que alguém na torre o escute, sua voz se perde no 
-                vento da savana e ninguém na torre aparece. Continua a seguir, procurando, 
-                ${heroi.nome} percebe que está se afastando da torre, ate que encontra uma
-                passagem de fácil acesso para subir, você logo segue para a torre, ao
-                terminar a subida e surpreendido por um estrondo que se aproxima, 
-                começa correr, um elefante em disparada sai por trás de um morro e o atropela, 
-                quebrando suas constelas e o pescoço.`);
+                interio da torre, que oscila, decide gritar por socorro, na esperança que 
+                alguém na torre o escute, sua voz se perde no vento da savana e ninguém 
+                na torre aparece. Continua procurando um acesso a parte alta, ${heroi.nome} 
+                percebe que está se afastando da torre, ate que encontra uma passagem de 
+                fácil acesso para subir, ao terminar a subida e surpreendido por um estrondo
+                que se aproxima, começa a correr, um elefante em disparada sai por trás de um
+                morro e o atropela, quebrando suas constelas e o pescoço.`);
                 heroi.ferimento(100);
                 vivo = false;
             break;
@@ -54,11 +53,12 @@ module.exports = (heroi) => {
             
             console.log(`
                 ${heroi.nome} Decide ir ate a casa na floresta, dando passos cautelosos, 
-                avança lentamente, depois de alguns metros, encontra sua lanterna,
-                chegando na cabana, percebe que a cabana foi destruida a algum 
-                tempo. explorando a cabana, encontra um rolo de cordas um mapa 
-                do zoológico é uma cama coberta de palhas e madeira, você 
-                decide fazer uma fogueira e passar a noite alí.`);
+                avança lentamente, começa lentamente a entrar na floresta, depois de alguns 
+                metros, encontra sua lanterna, usando a lanterna para iluminar o caminho, 
+                logo chega a casa e nota que é um alojamento destruído, apenas a parede onde 
+                ficava a lareira está de pé, sobrando algumas partes das vigas do restante da casa.
+                Explorando a cabana, encontra um rolo de cordas um mapa do zoológico é uma cama 
+                coberta de palhas e madeira, você decide fazer uma fogueira e passar a noite alí.`);
                 heroi.restaurarVida();
                 heroi.addFerramenta("CORDAS");
                 heroi.addFerramenta("LANTERNA");
@@ -68,7 +68,7 @@ module.exports = (heroi) => {
         case 3:
             console.log(`
                 ${heroi.nome} procura um canto reservado entre os arbusto, 
-                depois alguns metros encotra sua lanterna, mas para poupar
+                depois de alguns metros encotra sua lanterna, mas para poupar
                 energia decide usar a luz da lua, que fornece um pouco de 
                 visibilidade, você fica tentado a ir ate a casa na floresta, 
                 mas teme que tenha algum animal a espreita, pois como biologo,

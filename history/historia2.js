@@ -4,14 +4,14 @@ module.exports = (heroi) => {
     function verificarNum() {
         let valor;
         do {
-            valor = parseInt(+prompt("Digite um valor:"));
+            valor = parseInt(+prompt("Digite um valor: "));
         } while ((isNaN(valor) || valor < 1 || valor > 3) && typeof valor !== 'string');
     
         return valor;
     }
 
     console.log("");
-    console.log(`Fora do zoológico os agentes descobrem que você não saiu do zoológico. 
+    console.log(`Fora do zoológico os agentes descobrem que você não saiu. 
                  E começam a ficar preocupados.
                  Um dos agentes faz uma ligação misteriosa.
                  Quando a chamada e atendida, ele fala:
@@ -19,12 +19,12 @@ module.exports = (heroi) => {
                  
                  Dentro do zoológico ...
                  
-                 Avistando uma torre de observação a 50 metros de distância você decide ir até lá.
-                 Está escuro no caminho para a torre.
-                 ${heroi.nome} avança com cautela pelo caminho arenoso, iluminando com sua lanterna 
+                 Avistando uma torre de observação a 300 metros de distância você decide ir até lá.
+                 O caminho para a torre está escuro.
+                 ${heroi.nome} avança com cautela pelo terreno arenoso, iluminando com sua lanterna 
                  cada som que escuta, você nota que o caminho fica a beira de um barranco de 
                  aproximadamente dez metros de profundidade.
-                 Um som de passos galopantes se aproxima, pequenas risadinhas e uivos ele escuta
+                 Um som de passos galopantes se aproxima, você escuta pequenas risadinhas e uivos
                  se aproximar. Logo aponta a lanterna em direção dos sons.
                  Uma hiena se aproxima, agora ${heroi.nome} tem que pensar rápido.
                  `);
@@ -46,7 +46,7 @@ module.exports = (heroi) => {
                 ${heroi.nome} toma impulso e corre, saltando barranco abaixo.
                 Apontando alanterna para baixo para ver onde vai cair,
                 Acerta com sorte, um pequeno lago de lama e fezes de animais
-                que suaviza a queda, machucando levemente o joelho`);
+                que suaviza a queda, machucando levemente o joelho.`);
                 heroi.removerItemDeFerramentas("LANTERNA")
                 heroi.ferimento(20);
                 heroi.verStatus();

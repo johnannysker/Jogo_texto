@@ -25,14 +25,14 @@ module.exports = (heroi) => {
         emergência são ligadas, mas não ficarão acessas por muito tempo, em oito horas 
         o zoológico ficará no escuro. O Nova África é um zoológico com animais de grande
         porte, todos de origem da savana africana, localizado em uma região remota do 
-        Congo. Agora, leões, elefantes, zebras, hienas e ate mesmo os rinocerontes, 
+        Serenguete. Agora, leões, elefantes, zebras, hienas e ate mesmo os rinocerontes, 
         estarão vagando pelo zoológico.
         
-            Rapidamente ${heroi.nome} pega um estojo com três dardos tranquilizantes e uma lanterna 
-        e tenta sair da jaula, mas a fêmea rinoceronte está bloqueando a saída, neste
-        exato momento os agentes do zoológico, acreditando que todos os visitantes já 
-        haviam saído, iniciam o protocólo de segurança, logo após começam a verificar 
-        quais funcionários estavam no expediente e se conseguiram sair. 
+            Rapidamente ${heroi.nome} pega um estojo com três dardos tranquilizantes e 
+        uma lanterna e tenta sair da jaula, mas a fêmea rinoceronte está bloqueando a 
+        saída, neste exato momento os agentes do zoológico, acreditando que todos os 
+        visitantes já haviam saído, iniciam o protocólo de segurança, logo após 
+        começam a verificar quais funcionários estavam no expediente e se conseguiram sair. 
         
         Na jaula do rinoceronte...`);
     console.log("");
@@ -49,12 +49,11 @@ module.exports = (heroi) => {
     switch(opc){
         case 1:
             console.log(`
-                Você tenta se aproximar devagar, fazendo um som com a boca de 
-            "sssshhhhhh! Calma, Calma."
-            Aparentemente, a rinoceronte esta se acalmando. Mas, 
-            em um movimento brusco e rápido ela balança a cabeça de baixo para cima.
-            Acertando em cheio seu peito. E com um movimento de chicote da cabeça,
-            atira seu corpo para o canto da jaula. `);
+                Você tenta se aproximar devagar, fazendo um som com a boca de "sssshhhhhh!
+            Calma, Calma."
+                Aparentemente, a rinoceronte esta se acalmando. Mas, em um movimento brusco 
+            e rápido ela balança a cabeça de baixo para cima, acertando em cheio seu peito.
+            E com um movimento de chicote da cabeça, atira seu corpo para o canto da jaula. `);
             vivo = false
             heroi.ferimento(100);
             break;
@@ -62,9 +61,9 @@ module.exports = (heroi) => {
             console.log(`
                 ${heroi.nome} aguarda alguns minutos, na esperança que a rinoceronte se 
             afaste da entrada, mas começa a ficar impaciente.
-            vai ate o canto da jaula, nesse momento a rinoceronte parte em sua direção.
-            Fazendo uma finta, você se livra do golpe mortal, mesmo assim,
-            o chifre acerta suas costas de raspão, causando um sangramento pequeno.
+                Vai ate o canto da jaula, nesse momento a rinoceronte parte em sua direção.
+            Fazendo uma finta, você se livra do golpe mortal, mesmo assim, o chifre acerta 
+            suas costas de raspão, causando um sangramento pequeno.
             Você pula para fora da jaula e sai rápido.`);
             heroi.ferimento(30);
             heroi.verStatus();
@@ -72,8 +71,8 @@ module.exports = (heroi) => {
         case 3:
             console.log(`
                 ${heroi.nome} se aproxima devagar, faz a mira e atira no pescoço da rinoceronte.
-            Se afasta rápidamente, e aguarda em poucos minutos a rinoceronte cair no sono.
-            Saindo em seguida da jaula.`);
+            Se afasta rápidamente, e aguarda. Em poucos minutos a rinoceronte cair no sono.
+            Você sai em seguida da jaula.`);
             heroi.atiraDardo();
             heroi.verStatus();
             break;
